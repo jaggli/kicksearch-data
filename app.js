@@ -3,11 +3,17 @@ const path = require('path')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+const helmet = require('helmet')
 
 const index = require('./routes/index')
 const users = require('./routes/users')
 
 const app = express()
+
+// basic security middleware
+app.use(helmet({
+  frameguard: false
+}))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
