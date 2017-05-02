@@ -1,9 +1,17 @@
-const express = require('express')
-const router = express.Router()
+const { list: listVehicles } = require('./vehicles')
 
-/* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Kickstart backend' })
-})
+// definition of all root routes
+const index = (req, res, next) => {
+  res.render('index', { title: 'Frontend version server' })
+}
 
-module.exports = router
+console.log(listVehicles)
+
+// routes
+const setupRoutes = app => {
+  app.get('/', index)
+  app.get('/api/v1', index)
+  app.get('/api/v1/vehicles', listVehicles)
+}
+
+module.exports = setupRoutes
