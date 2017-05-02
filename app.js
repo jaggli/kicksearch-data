@@ -7,6 +7,17 @@ const helmet = require('helmet')
 const setupRoutes = require('./routes')
 const app = express()
 
+app.use((req, res, next) => {
+  res.header(
+    'Access-Control-Allow-Origin', '*'
+  )
+  res.header(
+    'Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept'
+  )
+  next()
+})
+
+
 // basic security middleware
 app.use(helmet({
   frameguard: false
