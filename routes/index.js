@@ -1,7 +1,6 @@
 const routes = [
   'vehicles',
-  'coredata',
-  'filters'
+  'coredata'
 ]
 const apiRoot = '/api/v1'
 

@@ -1,90 +1,119 @@
-{
-  "MakeId": {
+[ 
+  {
+    "id": "MakeId",
     "title": "Marke",
     "type": "distinct"
   },
-  "ModelId": {
+  {
+    "id": "ModelId",
     "title": "Modell",
     "type": "distinct"
   },
-  "FirstRegYear": {
+  {
+    "id": "FirstRegYear",
     "title": "Ersteinlösung",
     "type": "numeric"
   },
-  "BodyTypeId": {
+  {
+    "id": "BodyTypeId",
     "title": "Aufbau",
     "type": "distinct"
   },
-  "FuelTypeId": {
+  {
+    "id": "FuelTypeId",
     "title": "Treibstoff",
     "type": "distinct"
   },
-  "TransmissionTypeId": {
+  {
+    "id": "TransmissionTypeId",
     "title": "Getriebeart",
     "type": "distinct"
   },
-  "ConsumptionRatingTypeId": {
+  {
+    "id": "ConsumptionRatingTypeId",
     "title": "Energieeffizienz",
     "type": "distinct"
   },
-  "ConsumptionTotal": {
+  {
+    "id": "ConsumptionTotal",
     "title": "Verbrauch",
     "type": "numeric"
   },
-  "Doors": {
+  {
+    "id": "Doors",
     "title": "Türen",
     "type": "numeric"
   },
-  "Seats": {
+  {
+    "id": "Seats",
     "title": "Sitze",
     "type": "numeric"
   },
-  "Ccm": {
+  {
+    "id": "Ccm",
     "title": "Hubraum",
     "type": "numeric"
   },
-  "Hp": {
+  {
+    "id": "Hp",
     "title": "Leistung",
     "type": "numeric"
   },
-  "BodyColorId": {
+  {
+    "id": "BodyColorId",
     "title": "Aussenfarbe",
     "type": "distinct"
   },
-  "Price": {
+  {
+    "id": "Price",
     "title": "Preis",
-    "type": "numeric"
+    "type": "numeric",
+    "question": "In welchem Bereich befindet sich dein Budget?",
+    "answers": [
+      { "title": "tiefpreis", "desc": "Weniger als %d.-", "value": "-%d" },
+      { "title": "günstig", "desc": "Zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
+      { "title": "preiswert", "desc": "Zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
+      { "title": "teuer", "desc": "Mehr als CHF %d.-", "value": "%d-"  }
+    ]
   },
-  "Co2Emission": {
+  {
+    "id": "Co2Emission",
     "title": "CO2 Ausstoss",
     "type": "numeric"
   },
-  "Km": {
+  {
+    "id": "Km",
     "title": "Kilometerstand",
     "type": "numeric"
   },
-  "InteriorColorId": {
+  {
+    "id": "InteriorColorId",
     "title": "Innenfarbe",
     "type": "distinct"
   },
-  "Cylinders": {
+  {
+    "id": "Cylinders",
     "title": "Zylinder",
     "type": "numeric"
   },
-  "Gears": {
+  {
+    "id": "Gears",
     "title": "Gänge",
     "type": "numeric"
   },
-  "WeightTotal": {
+  {
+    "id": "WeightTotal",
     "title": "Gewicht",
     "type": "numeric"
   },
-  "IsAccidented": {
+  {
+    "id": "IsAccidented",
     "title": "Umfallwagen",
     "type": "boolean"
   },
-  "Equipment": {
+  {
+    "id": "Equipment",
     "title": "Ausstattung",
     "type": "array"
-  } 
-}
+  }
+]
