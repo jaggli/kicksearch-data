@@ -2,3 +2,9 @@ extends layout
 
 block content
   h1= title
+  if routes
+    ul
+      each route in routes
+        - const link = apiRoot + '/' + route
+        li
+          a(href=link)= link

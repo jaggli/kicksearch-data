@@ -1,5 +1,5 @@
-const { send } = require('../../views/response')
-const data = require('../../data/vehicles.json')
+const { send } = require('../views/response')
+const data = require('../data/vehicles.json')
 
 module.exports = (req, res, next) => {
   send(res, {

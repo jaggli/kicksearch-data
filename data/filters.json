@@ -1,0 +1,98 @@
+{
+  "MakeId": {
+    "title": "Marke",
+    "type": "distinct"
+  },
+  "ModelId": {
+    "title": "Modell",
+    "type": "distinct"
+  },
+  "FirstRegYear": {
+    "title": "",
+    "type": "numeric"
+  },
+  "BodyTypeId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "FuelTypeId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "TransmissionTypeId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "DriveTypeId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "ConsumptionRatingTypeId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "ConsumptionTotal": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Doors": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Seats": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Ccm": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Hp": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Kw": {
+    "title": "",
+    "type": "numeric"
+  },
+  "BodyColorId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "Price": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Co2Emission": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Km": {
+    "title": "",
+    "type": "numeric"
+  },
+  "InteriorColorId": {
+    "title": "",
+    "type": "distinct"
+  },
+  "Cylinders": {
+    "title": "",
+    "type": "numeric"
+  },
+  "Gears": {
+    "title": "",
+    "type": "numeric"
+  },
+  "WeightTotal": {
+    "title": "",
+    "type": "numeric"
+  },
+  "IsAccidented": {
+    "title": "",
+    "type": "boolean"
+  },
+  "Equipment": {
+    "title": "",
+    "type": "array"
+  } 
+}
