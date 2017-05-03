@@ -84,7 +84,7 @@
     "type": "boolean"
   },
   "Equipment": {
-    "title": "Austattung",
+    "title": "Ausstattung",
     "type": "array"
   } 
 }
