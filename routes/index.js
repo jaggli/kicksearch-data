@@ -5,7 +5,7 @@ const {
 
 // definition of all root routes
 const index = (req, res, next) => {
-  res.render('index', { title: 'Frontend version server' })
+  res.render('index', { title: 'Kicksearch REST API' })
 }
 
 // routes
