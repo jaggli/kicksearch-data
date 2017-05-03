@@ -1,37 +1,29 @@
-const make = require('./make')
+const oneof = require('./oneof')
+const numeric = require('./numeric')
 
 const noop = vehicles => vehicles
-const genericNumeric = key => (vehicles, value) => {
-  if (!value) { return vehicles }
-  value = value.split('-').map(fromto => parseInt(fromto, 10))
-  if (value.length !== 2) { return vehicles }
-  let [ from, to ] = value
-  from = from || -Infinity
-  to = to || Infinity
-  return vehicles.filter(vehicle => from <= vehicle[key] && to >= vehicle[key])
-}
 
 const filters = {
-  MakeId: make,
-  ModelId: noop,
-  FirstRegYear: genericNumeric('FirstRegYear'),
-  BodyTypeId: noop,
-  FuelTypeId: noop,
-  TransmissionTypeId: noop,
-  ConsumptionRatingTypeId: noop,
-  ConsumptionTotal: genericNumeric('ConsumptionTotal'),
-  Doors: genericNumeric('Doors'),
-  Seats: genericNumeric('Seats'),
-  Ccm: genericNumeric('Ccm'),
-  Hp: genericNumeric('Hp'),
-  BodyColorId: noop,
-  Price: genericNumeric('Price'),
-  Co2Emission: genericNumeric('Co2Emission'),
-  Km: genericNumeric('Km'),
-  InteriorColorId: noop,
-  Cylinders: genericNumeric('Cylinders'),
-  Gears: genericNumeric('Gears'),
-  WeightTotal: genericNumeric('WeightTotal'),
+  MakeId: oneof('MakeId'),
+  ModelId: oneof('ModelId'),
+  FirstRegYear: numeric('FirstRegYear'),
+  BodyTypeId: oneof('BodyTypeId'),
+  FuelTypeId: oneof('FuelTypeId'),
+  TransmissionTypeId: oneof('TransmissionTypeId'),
+  ConsumptionRatingTypeId: oneof('ConsumptionRatingTypeId'),
+  ConsumptionTotal: numeric('ConsumptionTotal'),
+  Doors: numeric('Doors'),
+  Seats: numeric('Seats'),
+  Ccm: numeric('Ccm'),
+  Hp: numeric('Hp'),
+  BodyColorId: oneof('BodyColorId'),
+  Price: numeric('Price'),
+  Co2Emission: numeric('Co2Emission'),
+  Km: numeric('Km'),
+  InteriorColorId: oneof('InteriorColorId'),
+  Cylinders: numeric('Cylinders'),
+  Gears: numeric('Gears'),
+  WeightTotal: numeric('WeightTotal'),
   IsAccidented: noop,
   Equipment: noop
 }
