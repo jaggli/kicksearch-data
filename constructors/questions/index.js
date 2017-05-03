@@ -1,5 +1,5 @@
-const getQuestion = require('./getQuestion')
+const getNextQuestion = require('./getNextQuestion')
 
 module.exports = {
-  getQuestion
+  getNextQuestion
 }

@@ -14,9 +14,16 @@
   },
   {
     "id": "FirstRegYear",
-    "title": "Ersteinlösung",
-    "priority": 99,
-    "type": "numeric"
+    "title": "Erszulassung",
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Erstzulassung soll...",
+    "answers": [
+      { "title": "weniger als %d Jahre her sein", "value": "-%d" },
+      { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
+      { "title": "mehr als %d Jahre her sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "BodyTypeId",
@@ -45,32 +52,67 @@
   {
     "id": "ConsumptionTotal",
     "title": "Verbrauch",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Der Verbrauch soll...",
+    "answers": [
+      { "title": "Weniger als %d Jahre", "value": "-%d" },
+      { "title": "Zwischen %d und %d Jahre", "value": "%d-%d"  },
+      { "title": "Zwischen %d und %d Jahre", "value": "%d-%d"  },
+      { "title": "Mehr als %d Jahre", "value": "%d-"  }
+    ]
   },
   {
     "id": "Doors",
     "title": "Türen",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Anzahl Türen soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "Seats",
     "title": "Sitze",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Anzahl Sitze soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "Ccm",
     "title": "Hubraum",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Der Hubraum soll...",
+    "answers": [
+      { "title": "weniger als %dcm³ sein", "value": "-%d" },
+      { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
+      { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
+      { "title": "mehr als %dcm³ sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "Hp",
     "title": "Leistung",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Leistung soll...",
+    "answers": [
+      { "title": "weniger als %d PS sein", "value": "-%d" },
+      { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
+      { "title": "mehr als %d PS sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "BodyColorId",
@@ -83,25 +125,39 @@
     "title": "Preis",
     "priority": 2,
     "type": "numeric",
-    "question": "In welchem Bereich befindet sich dein Budget?",
+    "question": "Mein Budget ist...",
     "answers": [
-      { "title": "tiefpreis", "desc": "Weniger als %d.-", "value": "-%d" },
-      { "title": "günstig", "desc": "Zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
-      { "title": "preiswert", "desc": "Zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
-      { "title": "teuer", "desc": "Mehr als CHF %d.-", "value": "%d-"  }
+      { "title": "weniger als %d.-", "value": "-%d" },
+      { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
+      { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
+      { "title": "mehr als CHF %d.-", "value": "%d-"  }
     ]
   },
   {
     "id": "Co2Emission",
     "title": "CO2 Ausstoss",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Der CO2 Ausstoss soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "Km",
     "title": "Kilometerstand",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Der Kilometerstand soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "InteriorColorId",
@@ -112,20 +168,41 @@
   {
     "id": "Cylinders",
     "title": "Zylinder",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Anzahl der Zylinder soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "Gears",
     "title": "Gänge",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Die Anzahl der Gänge soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "WeightTotal",
     "title": "Gewicht",
-    "priority": 99,
-    "type": "numeric"
+    "priority": 10,
+    "type": "numeric",
+    "question": "Das Gesammtgewicht soll...",
+    "answers": [
+      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      { "title": "mehr als %d sein", "value": "%d-"  }
+    ]
   },
   {
     "id": "IsAccidented",
