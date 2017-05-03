@@ -2,7 +2,8 @@
   {
     "id": "MakeId",
     "title": "Marke",
-    "type": "distinct"
+    "type": "autocomplete",
+    "answers": null
   },
   {
     "id": "ModelId",
