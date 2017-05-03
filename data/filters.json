@@ -8,91 +8,83 @@
     "type": "distinct"
   },
   "FirstRegYear": {
-    "title": "",
+    "title": "Ersteinlösung",
     "type": "numeric"
   },
   "BodyTypeId": {
-    "title": "",
+    "title": "Aufbau",
     "type": "distinct"
   },
   "FuelTypeId": {
-    "title": "",
+    "title": "Treibstoff",
     "type": "distinct"
   },
   "TransmissionTypeId": {
-    "title": "",
-    "type": "distinct"
-  },
-  "DriveTypeId": {
-    "title": "",
+    "title": "Getriebeart",
     "type": "distinct"
   },
   "ConsumptionRatingTypeId": {
-    "title": "",
+    "title": "Energieeffizienz",
     "type": "distinct"
   },
   "ConsumptionTotal": {
-    "title": "",
+    "title": "Verbrauch",
     "type": "numeric"
   },
   "Doors": {
-    "title": "",
+    "title": "Türen",
     "type": "numeric"
   },
   "Seats": {
-    "title": "",
+    "title": "Sitze",
     "type": "numeric"
   },
   "Ccm": {
-    "title": "",
+    "title": "Hubraum",
     "type": "numeric"
   },
   "Hp": {
-    "title": "",
-    "type": "numeric"
-  },
-  "Kw": {
-    "title": "",
+    "title": "Leistung",
     "type": "numeric"
   },
   "BodyColorId": {
-    "title": "",
+    "title": "Aussenfarbe",
     "type": "distinct"
   },
   "Price": {
-    "title": "",
+    "title": "Preis",
     "type": "numeric"
   },
   "Co2Emission": {
-    "title": "",
+    "title": "CO2 Ausstoss",
     "type": "numeric"
   },
   "Km": {
-    "title": "",
+    "title": "Kilometerstand",
     "type": "numeric"
   },
   "InteriorColorId": {
-    "title": "",
+    "title": "Innenfarbe",
     "type": "distinct"
   },
   "Cylinders": {
-    "title": "",
+    "title": "Zylinder",
     "type": "numeric"
   },
   "Gears": {
-    "title": "",
+    "title": "Gänge",
     "type": "numeric"
   },
   "WeightTotal": {
-    "title": "",
+    "title": "Gewicht",
     "type": "numeric"
   },
   "IsAccidented": {
-    "title": "",
+    "title": "Umfallwagen",
     "type": "boolean"
   },
   "Equipment": {
-    "title": "",
+    "title": "Austattung",
     "type": "array"
   } 
 }
