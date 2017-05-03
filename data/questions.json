@@ -2,72 +2,86 @@
   {
     "id": "MakeId",
     "title": "Marke",
+    "priority": 1,
     "type": "autocomplete",
     "answers": null
   },
   {
     "id": "ModelId",
     "title": "Modell",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "FirstRegYear",
     "title": "Ersteinlösung",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "BodyTypeId",
     "title": "Aufbau",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "FuelTypeId",
     "title": "Treibstoff",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "TransmissionTypeId",
     "title": "Getriebeart",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "ConsumptionRatingTypeId",
     "title": "Energieeffizienz",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "ConsumptionTotal",
     "title": "Verbrauch",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Doors",
     "title": "Türen",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Seats",
     "title": "Sitze",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Ccm",
     "title": "Hubraum",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Hp",
     "title": "Leistung",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "BodyColorId",
     "title": "Aussenfarbe",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "Price",
     "title": "Preis",
+    "priority": 2,
     "type": "numeric",
     "question": "In welchem Bereich befindet sich dein Budget?",
     "answers": [
@@ -80,41 +94,49 @@
   {
     "id": "Co2Emission",
     "title": "CO2 Ausstoss",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Km",
     "title": "Kilometerstand",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "InteriorColorId",
     "title": "Innenfarbe",
+    "priority": 99,
     "type": "distinct"
   },
   {
     "id": "Cylinders",
     "title": "Zylinder",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "Gears",
     "title": "Gänge",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "WeightTotal",
     "title": "Gewicht",
+    "priority": 99,
     "type": "numeric"
   },
   {
     "id": "IsAccidented",
     "title": "Umfallwagen",
+    "priority": 99,
     "type": "boolean"
   },
   {
     "id": "Equipment",
     "title": "Ausstattung",
+    "priority": 99,
     "type": "array"
   }
 ]
