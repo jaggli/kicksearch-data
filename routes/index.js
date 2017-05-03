@@ -1,6 +1,6 @@
 const {
   list: vehiclesList,
-  coredata: vehiclesCoredata
+  coredata
 } = require('./vehicles')
 
 // definition of all root routes
@@ -13,7 +13,7 @@ const setupRoutes = app => {
   app.get('/', index)
   app.get('/api/v1', index)
   app.get('/api/v1/vehicles', vehiclesList)
-  app.get('/api/v1/vehiclesCoredata', vehiclesCoredata)
+  app.get('/api/v1/coredata', coredata)
 }
 
 module.exports = setupRoutes
