@@ -15,7 +15,7 @@
   {
     "id": "FirstRegYear",
     "title": "Erszulassung",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Erstzulassung soll...",
     "answers": [
@@ -52,7 +52,7 @@
   {
     "id": "ConsumptionTotal",
     "title": "Verbrauch",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Der Verbrauch soll...",
     "answers": [
@@ -65,7 +65,7 @@
   {
     "id": "Doors",
     "title": "Türen",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl Türen soll...",
     "answers": [
@@ -78,7 +78,7 @@
   {
     "id": "Seats",
     "title": "Sitze",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl Sitze soll...",
     "answers": [
@@ -91,7 +91,7 @@
   {
     "id": "Ccm",
     "title": "Hubraum",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Der Hubraum soll...",
     "answers": [
@@ -104,7 +104,7 @@
   {
     "id": "Hp",
     "title": "Leistung",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Leistung soll...",
     "answers": [
@@ -136,7 +136,7 @@
   {
     "id": "Co2Emission",
     "title": "CO2 Ausstoss",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Der CO2 Ausstoss soll...",
     "answers": [
@@ -168,7 +168,7 @@
   {
     "id": "Cylinders",
     "title": "Zylinder",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl der Zylinder soll...",
     "answers": [
@@ -181,7 +181,7 @@
   {
     "id": "Gears",
     "title": "Gänge",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl der Gänge soll...",
     "answers": [
@@ -194,7 +194,7 @@
   {
     "id": "WeightTotal",
     "title": "Gewicht",
-    "priority": 10,
+    "priority": 20,
     "type": "numeric",
     "question": "Das Gesammtgewicht soll...",
     "answers": [
