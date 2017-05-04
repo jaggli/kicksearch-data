@@ -130,7 +130,8 @@
       "lt": { "title": "maximal %d.-", "value": "-%d" },
       "bt": { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d" },
       "gt": { "title": "mehr als CHF %d.-", "value": "%d-" },
-      "eq": { "title": "genau %d sein", "value": "%d" }
+      "eq": { "title": "genau %d sein", "value": "%d" },
+      "images" : [ "1.png", "2.png", "3.png", "4.png" ]
     }
   },
   {

@@ -7,7 +7,6 @@ const sortByPriority = (a, b) => {
 
 const getAgumentedQuestion = (vehicles, questions, start) => {
   start = start || 0
-  console.log(start)
   if (!questions[start]) { return null }
   let question = agumentQuestions(vehicles, questions.slice(start, start + 1)).shift()
 

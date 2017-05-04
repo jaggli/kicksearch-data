@@ -23,7 +23,7 @@ const splitByMedian = values => {
   }
 
   return {
-    lower: values.slice(0, medianIndex),
+    lower: values.slice(0, Math.max(medianIndex, 1)),
     upper: values.slice(medianIndex)
   }
 }
@@ -40,13 +40,18 @@ module.exports = (vehicles, keys) => {
     const len = values.length
     let variantCount = 0
     for (let i = 0; i < len; i++) {
-      if (acc[values[i]]) { continue }
+      if (acc[values[i]]) {
+        acc[values[i]]++
+        continue
+      }
       acc[values[i]] = 1
       variantCount++
-      if (variantCount > 4) { break }
+      //if (variantCount > 4) { break }
     }
     const variants = Object.keys(acc)
     let splitability = 0
+
+    console.log(acc)
 
     switch (variants.length) {
       case 0:
@@ -79,18 +84,22 @@ module.exports = (vehicles, keys) => {
 
         low = split.lower.upper.slice(0, 1)[0]
         high = split.lower.upper.slice(-1)[0]
-        if (split.lower.upper.length === 1 || low === high) {
-          ret.push({ type: 'eq', values: [low] })
-        } else {
-          ret.push({ type: 'bt', values: [low, high] })
+        if (low) {
+          if (split.lower.upper.length === 1 || low === high) {
+            ret.push({ type: 'eq', values: [low] })
+          } else {
+            ret.push({ type: 'bt', values: [low, high] })
+          }
         }
 
         low = split.upper.lower.slice(0, 1)[0]
         high = split.upper.lower.slice(-1)[0]
-        if (split.upper.lower.length === 1 || low === high) {
-          ret.push({ type: 'eq', values: [low] })
-        } else {
-          ret.push({ type: 'bt', values: [low, high] })
+        if (low) {
+          if (split.upper.lower.length === 1 || low === high) {
+            ret.push({ type: 'eq', values: [low] })
+          } else {
+            ret.push({ type: 'bt', values: [low, high] })
+          }
         }
 
         low = split.upper.upper.slice(0, 1)[0]
@@ -101,7 +110,7 @@ module.exports = (vehicles, keys) => {
           ret.push({ type: 'gt', values: [low] })
         }
 
-        splitability = 1 //DIRTY because of performance
+        splitability = ret.length / 4 // DIRTY because of performance
         break
     }
 

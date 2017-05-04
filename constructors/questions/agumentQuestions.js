@@ -33,6 +33,13 @@ const agumentQuestions = (vehicles, questions) => {
         return answer
       })
       question.splitability = distributions['numeric'][question.id].splitability
+
+      if (possibleAnswers.images) {
+        question.answers = question.answers.map((answer, i) => {
+          answer.image = '//kicksearch-data.herokuapp.com/icons/' + question.id + '/' + (i + 1) + '.png'
+          return answer
+        })
+      }
     }
     return question
   })
