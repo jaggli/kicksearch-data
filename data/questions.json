@@ -57,8 +57,8 @@
     "question": "Der Verbrauch soll...",
     "answers": {
       "lt": { "title": "%d l/100km oder weniger sein", "value": "-%d" },
-      "bt": { "title": "Zwischen %d und %d l/100km", "value": "%d-%d" },
-      "gt": { "title": "Mehr als %d l/100km", "value": "%d-" },
+      "bt": { "title": "Zwischen %d und %d l/100km sein", "value": "%d-%d" },
+      "gt": { "title": "Mehr als %d l/100km sein", "value": "%d-" },
       "eq": { "title": "genau %d l/100km sein", "value": "%d" }
     }
   },

@@ -46,6 +46,7 @@ module.exports = (vehicles, keys) => {
       if (variantCount > 4) { break }
     }
     const variants = Object.keys(acc)
+    let splitability = 0
 
     switch (variants.length) {
       case 0:
@@ -54,9 +55,12 @@ module.exports = (vehicles, keys) => {
       case 3:
       case 4:
         let value
+        let groupMembers = []
         while ((value = variants.shift())) {
+          groupMembers.push(acc[value])
           ret.push({ type: 'eq', values: [value] })
         }
+        splitability = math.min(groupMembers) * ret.length / values.length
         break
       default:
         const split = splitByMedian(values)
@@ -96,9 +100,15 @@ module.exports = (vehicles, keys) => {
         } else {
           ret.push({ type: 'gt', values: [low] })
         }
+
+        splitability = 1 //DIRTY because of performance
+        break
     }
 
-    data[key] = ret
+    data[key] = {
+      values: ret,
+      splitability
+    }
   })
 
   return data

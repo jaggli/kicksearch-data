@@ -4,10 +4,18 @@ const sortByPriority = (a, b) => {
   if (a.priority === b.priority) { return 0 }
   return a.priority > b.priority ? 1 : -1
 }
-const sortBySplitability = (a, b) => {
-  // sort by splitability score
-  // TODO
-  return sortByPriority(a, b)
+
+const getAgumentedQuestion = (vehicles, questions, start) => {
+  start = start || 0
+  console.log(start)
+  if (!questions[start]) { return null }
+  let question = agumentQuestions(vehicles, questions.slice(start, start + 1)).shift()
+
+  if (question.answers.length < 2 || question.splitability < 0.25) {
+    return getAgumentedQuestion(vehicles, questions, start + 1)
+  }
+
+  return question
 }
 
 module.exports = (vehicles, query) => {
@@ -17,12 +25,5 @@ module.exports = (vehicles, query) => {
     // TODO: filter exclusion based on answers
     .sort(sortByPriority)
 
-  if (!answered.length || (questions[0] && questions[0].type === 'numeric')) {
-    return agumentQuestions(vehicles, questions.slice(0, 1))
-      .shift()
-  }
-
-  return agumentQuestions(vehicles, questions)
-    .sort(sortBySplitability)
-    .shift() || null
+  return getAgumentedQuestion(vehicles, questions)
 }

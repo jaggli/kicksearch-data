@@ -22,7 +22,7 @@ const agumentQuestions = (vehicles, questions) => {
         value: key
       }))
     } else if (question.type === 'numeric') {
-      const questionDistributions = distributions['numeric'][question.id]
+      const questionDistributions = distributions['numeric'][question.id].values
       const possibleAnswers = question.answers
       question.answers = questionDistributions.map(distribution => {
         let answer = Object.assign({}, possibleAnswers[distribution.type])
@@ -32,6 +32,7 @@ const agumentQuestions = (vehicles, questions) => {
         })
         return answer
       })
+      question.splitability = distributions['numeric'][question.id].splitability
     }
     return question
   })
