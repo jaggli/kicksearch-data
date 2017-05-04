@@ -1,6 +1,9 @@
 module.exports = key => (vehicles, value) => {
   if (!value) { return vehicles }
   value = value.split('-').map(fromto => parseInt(fromto, 10))
+  if (value.length === 1) {
+    return vehicles.filter(vehicle => vehicle[key] === value[0])
+  }
   if (value.length !== 2) { return vehicles }
   let [ from, to ] = value
   from = from || -Infinity

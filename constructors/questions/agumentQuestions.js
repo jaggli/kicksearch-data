@@ -22,9 +22,11 @@ const agumentQuestions = (vehicles, questions) => {
         value: key
       }))
     } else if (question.type === 'numeric') {
-      const distribution = distributions['numeric'][question.id]
-      question.answers = question.answers.map((answer, i) => {
-        distribution.values[i].forEach(value => {
+      const questionDistributions = distributions['numeric'][question.id]
+      const possibleAnswers = question.answers
+      question.answers = questionDistributions.map(distribution => {
+        let answer = Object.assign({}, possibleAnswers[distribution.type])
+        distribution.values.forEach(value => {
           answer.title = answer.title.replace('%d', value)
           answer.value = answer.value.replace('%d', value)
         })

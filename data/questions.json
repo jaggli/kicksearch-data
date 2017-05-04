@@ -18,12 +18,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Erstzulassung soll...",
-    "answers": [
-      { "title": "maximal %d Jahre her sein", "value": "-%d" },
-      { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
-      { "title": "mehr als %d Jahre her sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "maximal %d Jahre her sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d Jahre her sein", "value": "%d-"  },
+      "eq": { "title": "genau %d Jahre her sein", "value": "%d-"  }
+    }
   },
   {
     "id": "BodyTypeId",
@@ -55,12 +55,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Der Verbrauch soll...",
-    "answers": [
-      { "title": "%d l/100km oder weniger sein", "value": "-%d" },
-      { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
-      { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
-      { "title": "Mehr als %d l/100km", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d l/100km oder weniger sein", "value": "-%d" },
+      "bt": { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
+      "gt": { "title": "Mehr als %d l/100km", "value": "%d-"  },
+      "eq": { "title": "genau %d l/100km sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Doors",
@@ -68,12 +68,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl Türen soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Seats",
@@ -81,12 +81,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl Sitze soll...",
-    "answers": [
-      { "title": "%d  oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d  oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Ccm",
@@ -94,12 +94,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Der Hubraum soll...",
-    "answers": [
-      { "title": "%dcm³ oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
-      { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
-      { "title": "mehr als %dcm³ sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%dcm³ oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %dcm³ sein", "value": "%d-"  },
+      "eq": { "title": "genau %dcm³ sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Hp",
@@ -107,12 +107,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Leistung soll...",
-    "answers": [
-      { "title": "%d PS oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
-      { "title": "mehr als %d PS sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d PS oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d PS sein", "value": "%d-"  },
+      "eq": { "title": "genau %d PS sein", "value": "%d-"  }
+    }
   },
   {
     "id": "BodyColorId",
@@ -126,12 +126,12 @@
     "priority": 2,
     "type": "numeric",
     "question": "Mein Budget ist...",
-    "answers": [
-      { "title": "maximal %d.-", "value": "-%d" },
-      { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
-      { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
-      { "title": "mehr als CHF %d.-", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "maximal %d.-", "value": "-%d" },
+      "bt": { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
+      "gt": { "title": "mehr als CHF %d.-", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Co2Emission",
@@ -139,12 +139,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Der CO2 Ausstoss soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Km",
@@ -152,12 +152,12 @@
     "priority": 10,
     "type": "numeric",
     "question": "Der Kilometerstand soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "InteriorColorId",
@@ -171,12 +171,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl der Zylinder soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "Gears",
@@ -184,12 +184,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Die Anzahl der Gänge soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
+      "eq": { "title": "genau %d sein", "value": "%d-"  }
+    }
   },
   {
     "id": "WeightTotal",
@@ -197,12 +197,12 @@
     "priority": 20,
     "type": "numeric",
     "question": "Das Gesammtgewicht soll...",
-    "answers": [
-      { "title": "%d oder weniger sein", "value": "-%d" },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      { "title": "mehr als %d sein", "value": "%d-"  }
-    ]
+    "answers": {
+      "lt": { "title": "%d kg oder weniger sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d kg sein", "value": "%d-%d"  },
+      "gt": { "title": "mehr als %d kg sein", "value": "%d-"  },
+      "eq": { "title": "genau %d kg sein", "value": "%d-"  }
+    }
   },
   {
     "id": "IsAccidented",
