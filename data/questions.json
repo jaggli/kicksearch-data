@@ -20,9 +20,9 @@
     "question": "Die Erstzulassung soll...",
     "answers": {
       "lt": { "title": "maximal %d Jahre her sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d Jahre her sein", "value": "%d-"  },
-      "eq": { "title": "genau %d Jahre her sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d Jahre her sein", "value": "%d-" },
+      "eq": { "title": "genau %d Jahre her sein", "value": "%d" }
     }
   },
   {
@@ -57,9 +57,9 @@
     "question": "Der Verbrauch soll...",
     "answers": {
       "lt": { "title": "%d l/100km oder weniger sein", "value": "-%d" },
-      "bt": { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
-      "gt": { "title": "Mehr als %d l/100km", "value": "%d-"  },
-      "eq": { "title": "genau %d l/100km sein", "value": "%d-"  }
+      "bt": { "title": "Zwischen %d und %d l/100km", "value": "%d-%d" },
+      "gt": { "title": "Mehr als %d l/100km", "value": "%d-" },
+      "eq": { "title": "genau %d l/100km sein", "value": "%d" }
     }
   },
   {
@@ -70,9 +70,9 @@
     "question": "Die Anzahl Türen soll...",
     "answers": {
       "lt": { "title": "%d oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -83,9 +83,9 @@
     "question": "Die Anzahl Sitze soll...",
     "answers": {
       "lt": { "title": "%d  oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -96,9 +96,9 @@
     "question": "Der Hubraum soll...",
     "answers": {
       "lt": { "title": "%dcm³ oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %dcm³ sein", "value": "%d-"  },
-      "eq": { "title": "genau %dcm³ sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %dcm³ sein", "value": "%d-" },
+      "eq": { "title": "genau %dcm³ sein", "value": "%d" }
     }
   },
   {
@@ -109,9 +109,9 @@
     "question": "Die Leistung soll...",
     "answers": {
       "lt": { "title": "%d PS oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d PS sein", "value": "%d-"  },
-      "eq": { "title": "genau %d PS sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d PS sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d PS sein", "value": "%d-" },
+      "eq": { "title": "genau %d PS sein", "value": "%d" }
     }
   },
   {
@@ -128,9 +128,9 @@
     "question": "Mein Budget ist...",
     "answers": {
       "lt": { "title": "maximal %d.-", "value": "-%d" },
-      "bt": { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
-      "gt": { "title": "mehr als CHF %d.-", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d" },
+      "gt": { "title": "mehr als CHF %d.-", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -141,9 +141,9 @@
     "question": "Der CO2 Ausstoss soll...",
     "answers": {
       "lt": { "title": "%d oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -154,9 +154,9 @@
     "question": "Der Kilometerstand soll...",
     "answers": {
       "lt": { "title": "%d oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -173,9 +173,9 @@
     "question": "Die Anzahl der Zylinder soll...",
     "answers": {
       "lt": { "title": "%d oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -186,9 +186,9 @@
     "question": "Die Anzahl der Gänge soll...",
     "answers": {
       "lt": { "title": "%d oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d sein", "value": "%d-"  },
-      "eq": { "title": "genau %d sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d sein", "value": "%d-" },
+      "eq": { "title": "genau %d sein", "value": "%d" }
     }
   },
   {
@@ -199,9 +199,9 @@
     "question": "Das Gesammtgewicht soll...",
     "answers": {
       "lt": { "title": "%d kg oder weniger sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d kg sein", "value": "%d-%d"  },
-      "gt": { "title": "mehr als %d kg sein", "value": "%d-"  },
-      "eq": { "title": "genau %d kg sein", "value": "%d-"  }
+      "bt": { "title": "zwischen %d und %d kg sein", "value": "%d-%d" },
+      "gt": { "title": "mehr als %d kg sein", "value": "%d-" },
+      "eq": { "title": "genau %d kg sein", "value": "%d" }
     }
   },
   {

@@ -62,26 +62,39 @@ module.exports = (vehicles, keys) => {
         const split = splitByMedian(values)
         split.lower = splitByMedian(split.lower)
         split.upper = splitByMedian(split.upper)
+        let low
+        let high
 
-        if (split.lower.lower.length === 1) {
-          ret.push({ type: 'eq', values: [split.lower.lower.pop()] })
+        low = split.lower.lower.slice(0, 1)[0]
+        high = split.lower.lower.slice(-1)[0]
+        if (split.lower.lower.length === 1 || low === high) {
+          ret.push({ type: 'eq', values: [high] })
         } else {
-          ret.push({ type: 'lt', values: [split.lower.lower.pop()] })
+          ret.push({ type: 'lt', values: [high] })
         }
-        if (split.lower.upper.length === 1) {
-          ret.push({ type: 'eq', values: [split.lower.upper.pop()] })
+
+        low = split.lower.upper.slice(0, 1)[0]
+        high = split.lower.upper.slice(-1)[0]
+        if (split.lower.upper.length === 1 || low === high) {
+          ret.push({ type: 'eq', values: [low] })
         } else {
-          ret.push({ type: 'bt', values: [split.lower.upper.shift(), split.lower.upper.pop()] })
+          ret.push({ type: 'bt', values: [low, high] })
         }
-        if (split.upper.lower.length === 1) {
-          ret.push({ type: 'eq', values: [split.upper.lower.pop()] })
+
+        low = split.upper.lower.slice(0, 1)[0]
+        high = split.upper.lower.slice(-1)[0]
+        if (split.upper.lower.length === 1 || low === high) {
+          ret.push({ type: 'eq', values: [low] })
         } else {
-          ret.push({ type: 'bt', values: [split.upper.lower.shift(), split.upper.lower.pop()] })
+          ret.push({ type: 'bt', values: [low, high] })
         }
-        if (split.upper.upper.length === 1) {
-          ret.push({ type: 'eq', values: [split.upper.upper.shift()] })
+
+        low = split.upper.upper.slice(0, 1)[0]
+        high = split.upper.upper.slice(-1)[0]
+        if (split.upper.upper.length === 1 || low === high) {
+          ret.push({ type: 'eq', values: [low] })
         } else {
-          ret.push({ type: 'gt', values: [split.upper.upper.shift()] })
+          ret.push({ type: 'gt', values: [low] })
         }
     }
 
