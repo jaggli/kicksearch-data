@@ -14,15 +14,15 @@
   },
   {
     "id": "FirstRegYear",
-    "title": "Erszulassung",
+    "title": "Erstzulassung",
     "priority": 20,
     "type": "numeric",
-    "question": "Die Erstzulassung soll...",
+    "question": "Das Erstzulassungs-Jahr soll...",
     "answers": {
-      "lt": { "title": "maximal %d Jahre her sein", "value": "-%d" },
-      "bt": { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d" },
-      "gt": { "title": "mehr als %d Jahre her sein", "value": "%d-" },
-      "eq": { "title": "genau %d Jahre her sein", "value": "%d" }
+      "lt": { "title": "vor %d gewesen sein", "value": "-%d" },
+      "bt": { "title": "zwischen %d und %d sein", "value": "%d-%d" },
+      "gt": { "title": "später als %d sein", "value": "%d-" },
+      "eq": { "title": "im Jahr %d sein", "value": "%d" }
     }
   },
   {
