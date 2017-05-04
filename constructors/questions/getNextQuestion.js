@@ -4,7 +4,7 @@ const sortByPriority = (a, b) => {
   if (a.priority === b.priority) { return 0 }
   return a.priority > b.priority ? 1 : -1
 }
-const sortByMagic = (a, b) => {
+const sortBySplitability = (a, b) => {
   // sort by splitability score
   // TODO
   return sortByPriority(a, b)
@@ -17,12 +17,12 @@ module.exports = (vehicles, query) => {
     // TODO: filter exclusion based on answers
     .sort(sortByPriority)
 
-  if (!answered.length) {
+  if (!answered.length || (questions[0] && questions[0].type === 'numeric')) {
     return agumentQuestions(vehicles, questions.slice(0, 1))
       .shift()
   }
 
   return agumentQuestions(vehicles, questions)
-    .sort(sortByMagic)
+    .sort(sortBySplitability)
     .shift() || null
 }

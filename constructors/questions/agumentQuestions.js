@@ -22,7 +22,7 @@ const agumentQuestions = (vehicles, questions) => {
         value: key
       }))
     } else if (question.type === 'numeric') {
-      const distribution = distributions['numeric']
+      const distribution = distributions['numeric'][question.id]
       question.answers = question.answers.map((answer, i) => {
         distribution.values[i].forEach(value => {
           answer.title = answer.title.replace('%d', value)

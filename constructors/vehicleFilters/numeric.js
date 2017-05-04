@@ -5,5 +5,5 @@ module.exports = key => (vehicles, value) => {
   let [ from, to ] = value
   from = from || -Infinity
   to = to || Infinity
-  return vehicles.filter(vehicle => from <= vehicle[key] && to >= vehicle[key])
+  return vehicles.filter(vehicle => from <= vehicle[key] && to > vehicle[key])
 }
