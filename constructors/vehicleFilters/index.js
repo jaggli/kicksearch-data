@@ -4,7 +4,7 @@ const numeric = require('./numeric')
 
 const noop = vehicles => vehicles
 
-const typeHandler = {
+const filters = {
   autocomplete: distinct,
   distinct,
   numeric,
@@ -12,15 +12,15 @@ const typeHandler = {
   array: noop
 }
 
-const filters = questions.reduce((ret, item) => {
-  ret[item.id] = typeHandler[item.type]
+const filterIdMap = questions.reduce((ret, item) => {
+  ret[item.id] = filters[item.type](item.id)
   return ret
 }, {})
 
 module.exports = {
   applyQuery: (vehicles, query) => Object.keys(query || {})
     .reduce(
-      (vehicles, id) => (filters[id] || noop)(vehicles, query[id]),
+      (vehicles, id) => filterIdMap[id](vehicles, query[id]),
       vehicles
     )
 }
