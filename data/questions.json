@@ -19,7 +19,7 @@
     "type": "numeric",
     "question": "Die Erstzulassung soll...",
     "answers": [
-      { "title": "weniger als %d Jahre her sein", "value": "-%d" },
+      { "title": "maximal %d Jahre her sein", "value": "-%d" },
       { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d Jahre her sein", "value": "%d-%d"  },
       { "title": "mehr als %d Jahre her sein", "value": "%d-"  }
@@ -56,10 +56,10 @@
     "type": "numeric",
     "question": "Der Verbrauch soll...",
     "answers": [
-      { "title": "Weniger als %d Jahre", "value": "-%d" },
-      { "title": "Zwischen %d und %d Jahre", "value": "%d-%d"  },
-      { "title": "Zwischen %d und %d Jahre", "value": "%d-%d"  },
-      { "title": "Mehr als %d Jahre", "value": "%d-"  }
+      { "title": "%d l/100km oder weniger sein", "value": "-%d" },
+      { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
+      { "title": "Zwischen %d und %d l/100km", "value": "%d-%d"  },
+      { "title": "Mehr als %d l/100km", "value": "%d-"  }
     ]
   },
   {
@@ -69,7 +69,7 @@
     "type": "numeric",
     "question": "Die Anzahl Türen soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -82,7 +82,7 @@
     "type": "numeric",
     "question": "Die Anzahl Sitze soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d  oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -95,7 +95,7 @@
     "type": "numeric",
     "question": "Der Hubraum soll...",
     "answers": [
-      { "title": "weniger als %dcm³ sein", "value": "-%d" },
+      { "title": "%dcm³ oder weniger sein", "value": "-%d" },
       { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
       { "title": "zwischen %dcm³ und %dcm³ sein", "value": "%d-%d"  },
       { "title": "mehr als %dcm³ sein", "value": "%d-"  }
@@ -108,7 +108,7 @@
     "type": "numeric",
     "question": "Die Leistung soll...",
     "answers": [
-      { "title": "weniger als %d PS sein", "value": "-%d" },
+      { "title": "%d PS oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d PS sein", "value": "%d-%d"  },
       { "title": "mehr als %d PS sein", "value": "%d-"  }
@@ -127,7 +127,7 @@
     "type": "numeric",
     "question": "Mein Budget ist...",
     "answers": [
-      { "title": "weniger als %d.-", "value": "-%d" },
+      { "title": "maximal %d.-", "value": "-%d" },
       { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
       { "title": "zwischen CHF %d.- und %d.-", "value": "%d-%d"  },
       { "title": "mehr als CHF %d.-", "value": "%d-"  }
@@ -140,7 +140,7 @@
     "type": "numeric",
     "question": "Der CO2 Ausstoss soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -153,7 +153,7 @@
     "type": "numeric",
     "question": "Der Kilometerstand soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -172,7 +172,7 @@
     "type": "numeric",
     "question": "Die Anzahl der Zylinder soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -185,7 +185,7 @@
     "type": "numeric",
     "question": "Die Anzahl der Gänge soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
@@ -198,7 +198,7 @@
     "type": "numeric",
     "question": "Das Gesammtgewicht soll...",
     "answers": [
-      { "title": "weniger als %d sein", "value": "-%d" },
+      { "title": "%d oder weniger sein", "value": "-%d" },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "zwischen %d und %d sein", "value": "%d-%d"  },
       { "title": "mehr als %d sein", "value": "%d-"  }
