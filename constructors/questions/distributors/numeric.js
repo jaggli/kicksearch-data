@@ -1,10 +1,8 @@
-module.exports = (vehicles, question) => {
-  const data = vehicles
-    .map(vehicle => vehicle[question.id])
-    .reduce((data, value) => {
-      data[value] = (data[value] || 0) + 1
-      return data
-    }, {})
+module.exports = (vehicles, keys) => {
+  const data = {}
+  keys.forEach(key => {
+    data[key] = vehicles.map(vehicle => vehicle[key])
+  })
 
   const ret = {
     values: [
@@ -14,8 +12,33 @@ module.exports = (vehicles, question) => {
       [3]
     ]
   }
-
-  console.log(vehicles.length)
   
   return ret
 }
+
+
+
+// module.exports = (vehicles, keys) => {
+//   const data = vehicles
+//     .reduce((data, vehicle) => {
+//       keys.forEach(key => {
+//         const value = vehicle[key]
+//         data[key] = data[key] || {}
+//         data[key][value] = (data[key][value] || 0) + 1
+//       })
+//       return data
+//     }, {})
+
+//   const ret = {
+//     values: [
+//       [1],
+//       [1, 2],
+//       [2, 3],
+//       [3]
+//     ]
+//   }
+
+//   console.log(data)
+  
+//   return ret
+// }
