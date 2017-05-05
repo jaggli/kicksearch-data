@@ -51,8 +51,6 @@ module.exports = (vehicles, keys) => {
     const variants = Object.keys(acc)
     let splitability = 0
 
-    console.log(acc)
-
     switch (variants.length) {
       case 0:
       case 1: break
@@ -104,10 +102,12 @@ module.exports = (vehicles, keys) => {
 
         low = split.upper.upper.slice(0, 1)[0]
         high = split.upper.upper.slice(-1)[0]
-        if (split.upper.upper.length === 1 || low === high) {
-          ret.push({ type: 'eq', values: [low] })
-        } else {
-          ret.push({ type: 'gt', values: [low] })
+        if (low) {
+          if (split.upper.upper.length === 1 || low === high) {
+            ret.push({ type: 'eq', values: [low] })
+          } else {
+            ret.push({ type: 'gt', values: [low] })
+          }
         }
 
         splitability = ret.length / 4 // DIRTY because of performance

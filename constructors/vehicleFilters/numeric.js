@@ -1,5 +1,6 @@
 module.exports = key => (vehicles, value) => {
   if (!value) { return vehicles }
+  value = value.pop ? value.pop() : value
   value = value.split('-').map(fromto => parseFloat(fromto))
   if (value.length === 1) {
     return vehicles.filter(vehicle => vehicle[key] === value[0])

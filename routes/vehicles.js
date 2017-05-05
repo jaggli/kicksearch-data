@@ -4,9 +4,15 @@ const coredata = require('../data/coredata.json')
 const { getNextQuestion } = require('../constructors/questions')
 const { applyQuery } = require('../constructors/vehicleFilters')
 
+const beginsWithHttp = /^https?:/i
+
 const agumentVehicles = list => list.slice(0).map(vehicle => {
   var ret = {}
   Object.keys(vehicle).forEach(key => {
+    if (key === 'Images' && vehicle[key]) {
+      ret[key] = vehicle[key].replace(beginsWithHttp, '')
+      return
+    }
     if (!coredata[key] || !vehicle[key]) {
       ret[key] = vehicle[key]
       return
